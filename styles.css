@@ -39,6 +39,59 @@
     border-color: #e2f1f2;
 }
 
+.main-body{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: aliceblue;
+    font-weight: bolder;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    overflow: auto;
+    justify-content: center;
+    align-content: center;
+}
+
+form{
+    display: none;
+    position: absolute;
+    z-index: 1 ;
+    top: 20vh;
+    left: auto;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 1.2em;
+    padding: 5vh 15vw 5vh 5vw;
+    background-color: rgb(3 73 86/0.7);
+    border-radius: 10px;
+}
+.form-item{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+input[type='text'],
+input[type='number']{
+    padding: 4px;
+    border-radius: 10px;
+    font-size: 1.1em;
+    border: none;
+}
+
+.card-items{
+    padding: 20px;
+    line-height: 1.2em;
+    background-color: #e2f1f2;
+    width: 20%;
+    height: 25%;
+    font-size: 1.3em;
+}
+
 .footer{
     background-color: #034956;
     color: aliceblue;

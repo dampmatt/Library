@@ -9,7 +9,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 100vh;
+    min-height:100vh;
     width: 100vw;
     background-color: #e2f1f2;
 }
@@ -40,8 +40,10 @@
 }
 
 .main-body{
+    /* margin: 100px; */
+    padding: 5vh;
     width: 100%;
-    height: 100%;
+    min-height:80.3vh;
     background-color: black;
     color: aliceblue;
     font-weight: bolder;
@@ -85,12 +87,44 @@ input[type='number']{
 
 .card-items{
     padding: 20px;
-    line-height: 1.2em;
+    line-height: 1.5em;
     background-color: #e2f1f2;
-    width: 20%;
-    height: 25%;
+    color: #034956;
+    width: 20vw;
+    height: 40vh;
     font-size: 1.3em;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    overflow: auto;
+    /* background-color: #034956; */
 }
+.card-items>p{
+    display: flex;
+    gap: 5ch;
+}
+.card-items>p>span{
+    width: 40px;
+    font-weight: bold;
+    color: black;
+    font-size: 1.1em;
+}
+ .card-btn{
+    align-self: center;
+    margin-top: 7vw;
+    background-color: #034956; 
+    width: 100%;
+    padding: 5px 45%;
+    color: #e2f1f2;
+    border-radius: 10px;
+}
+.card-btn:hover{
+    cursor: pointer;
+    background-color: #e2f1f2;
+    color: #034956;
+    border-color: #034956;
+    /* border: 1px solid; */
+}    
 
 .footer{
     background-color: #034956;
